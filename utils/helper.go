@@ -24,3 +24,8 @@ func MustAtoi(s string) int {
 
 	return i
 }
+
+func IsInt(s string) bool {
+	_, err := strconv.Atoi(s)
+	return err == nil
+}
